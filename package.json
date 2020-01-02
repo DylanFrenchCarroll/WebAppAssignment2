@@ -4,7 +4,8 @@
   "description": "project",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node ./build/server.js",
+    "compile": "babel --ignore node_modules --ignore client ./ --out-dir build ", 
     "server": "nodemon --exec babel-node server.js",
     "client": "npm start --prefix client",
     "bab": "nodemon --exec babel-node server.js",
