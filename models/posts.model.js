@@ -3,6 +3,9 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const postSchema = new Schema({
+    upvotes: {
+        type: Number
+    },
     title: {
         type: String
     },
@@ -10,7 +13,7 @@ const postSchema = new Schema({
         type: String
     },
     link:{
-        type:String
+        type: String
     },
 },{
     timestamps: true,

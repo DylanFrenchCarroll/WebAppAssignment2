@@ -10,6 +10,9 @@ const userSchema = new Schema({
         trim:true,
         minlength: 2,
     }, 
+    password: {
+        type: String
+    }
 }, {
     timestamps: true,
 });
