@@ -6,6 +6,8 @@ var _auth = _interopRequireDefault(require("./auth"));
 
 require('dotenv').config();
 
+var x = "x";
+
 var express = require('express');
 
 var cors = require('cors');
