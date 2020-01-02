@@ -14,7 +14,7 @@ var cors = require('cors');
 var mongoose = require('mongoose');
 
 var app = express();
-var port = 5000;
+var port = process.env.PORT || 5000;
 app.use(_auth["default"].initialize());
 app.use(cors());
 app.use(express.json());
