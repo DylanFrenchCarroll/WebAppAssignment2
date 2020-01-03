@@ -117,5 +117,14 @@ The app can also create a new post which is persistent and is put in the databas
 
 Update functionality is provided by updating the amount of upvotes a post has. This is stored in the DB also as part of the post object. 
 
+## User login
 The login page now has authorisation. In the sign up form, the username and password is stored in the db, there is no hashing done of the password. To login, the logging in checks the db for the correct username/password combination. Also to add a post, you must be signed in. To confirm if you are logged in, press F12, go to application, local storage dropdown and click the website. In there you will see the token. 
+
+## Code Structure
+
+The base folder is the project for the backend. Inside there is a folder called frontend which contains the react app. The models folder is for the DB. It provides a data model to go into the DB. Auth.js is for the authentication of logins. 
+
+The layout for the react app is similar to that of the labs. Inside src folder there is a dataStore directory, which contains the stubAPI js file. This is where my majority of functionality is contained. The rest is the boilerplate from the labs.  
+
+
 
