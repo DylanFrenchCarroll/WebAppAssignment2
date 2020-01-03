@@ -1,7 +1,7 @@
 # BSc (Hons.) Level 8 - Assignment 2 
 
 Name: Dylan French Carroll
-
+## Assignment 1
 ## Overview.
 Scroll down to find updates. 
 This is a basic web app based off of the hacker news labs. I changed the premise to be a 
@@ -105,6 +105,17 @@ I deployed my website using glitch so it is public and wont need to be ran local
 Website address is: https://dylanfrenchcarroll-web-app-assignment-1.glitch.me/
 
 
-#Update#
+## Assignment 2 Changes
 Since the first assignment I have added a backend to my application. 
+
+## CRUD
+The app reads data from the express server that i have set up. It is hosted on heroku. Here is the link for the list of posts on the schema: https://dylan-french-carroll-web-app-2.herokuapp.com/posts . The backend is linked with my mongo Atlas account and reads/wrties to the schema I have made. 
+
+The app also had the delete functionality, in which it deletes posts from the DB and the App. 
+
+The app can also create a new post which is persistent and is put in the database on Atlas. When a new post is created it can be seen on the link provided above. That goes for deleted and updated posts. 
+
+Update functionality is provided by updating the amount of upvotes a post has. This is stored in the DB also as part of the post object. 
+
+The login page now has authorisation. In the sign up form, the username and password is stored in the db, there is no hashing done of the password. To login, the logging in checks the db for the correct username/password combination. Also to add a post, you must be signed in. To confirm if you are logged in, press F12, go to application, local storage dropdown and click the website. In there you will see the token. 
 
